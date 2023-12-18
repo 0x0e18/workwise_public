@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkWise</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Replace the old Font Awesome 5 link with your Font Awesome 6 kit script -->
+    <script src="https://kit.fontawesome.com/f29a65fdb0.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0B0B0B; /* New background color for the content area */
+            color: #F4F4F4; /* Default text color */
+        }
+        .custom-white-smoke { background-color: #F4F4F4; }
+        .text-white-smoke { color: #F4F4F4; }
+        .custom-night { background-color: #0B0B0B; }
+        .text-night { color: #0B0B0B; }
+    
+        /* Header and Footer Shared Background */
+        .header-bg, .footer-bg {
+            background-color: #F4F4F4; /* This sets the header and footer background color */
+        }
+    
+        /* Shared link styling for header and footer */
+        .header-bg a, .footer-bg a {
+            color: #0B0B0B; /* Text color for links */
+            padding: 0.5rem 1rem; /* Padding around the link text, equivalent to Tailwind's p-2 */
+            border-radius: 0.25rem; /* Rounded corners for the links, equivalent to Tailwind's rounded-lg */
+            text-decoration: none; /* Removes underline from links */
+            display: inline-block; /* Align padding and border-radius correctly */
+            transition: background-color 0.3s; /* Smooth background color transition on hover */
+        }
+
+        .header-bg a:hover, .footer-bg a:hover {
+            background-color: #e2e8f0; /* Light gray background on hover, similar to Tailwind's hover:bg-gray-200 */
+        }
+
+    
+        /* Footer specific styles */
+        .footer-bg {
+            padding: 1rem 0; /* Padding for footer area */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center footer content */
+            justify-content: center;
+        }
+    
+        @media (min-width: 1024px) { /* for larger screens */
+            .lg:flex-2 {
+                flex: 2; /* Takes twice as much width as the image */
+            }
+            .lg:flex-1 {
+                flex: 1; /* Takes the space it needs */
+            }
+        }
+
+        /* Footer logo style */
+            .footer-logo {
+                height: auto; /* maintain aspect ratio */
+                width: 300px; /* or whatever size you prefer */
+            }
+        /* Card specific styles */
+            .bg-card {
+                background-color: #F4F4F4; /* Background color for cards */
+            }
+
+            .text-card-foreground {
+                color: #0B0B0B; /* Dark text color for content inside cards */
+            }
+
+        /* Social Media Icons */
+            .social-icon {
+                font-size: 2rem; /* Sets the icon size to twice the default, adjust as needed */
+            }
+
+        /* Additional styles if needed */
+        /* ... other styles ... */
+    </style>    
+</head>
+<body>
+    <!--
+// v0 by Vercel.
+// https://v0.dev/t/M5YKXwjRLWW
+-->
+<body class="content-bg">
+    <!-- Header -->
+    <header class="header-bg p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <img src="https://imagedelivery.net/5l14pzvHSLf_qA56HVIXfg/4ede07a0-8696-4fb8-87f0-d000034a7100/public" alt="WorkWise Logo" class="h-12 mr-3">
+            <nav class="flex space-x-4">
+                <a href="#" class="text-night font-medium p-2 rounded-lg hover:bg-gray-200">
+                    <span>Pricing</span>
+                </a>
+                <a href="#" class="text-night font-medium p-2 rounded-lg hover:bg-gray-200">
+                    <span>Support</span>
+                </a>
+                <a href="Dashboard.html" class="text-night font-medium p-2 rounded-lg hover:bg-gray-200">
+                    <span>Dashboard</span>
+                </a>                
+            </nav>
+            <div class="flex space-x-4">
+                <div class="relative">
+                    <input type="text" class="rounded-full pl-10 pr-4 py-2 border-2 border-gray-200" placeholder="Search">
+                    <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-200"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <body class="content-bg">
+        <!-- Main Content -->
+        <main class="flex flex-col items-center justify-center w-full">
+            <!-- Hero Section -->
+            <section class="py-6 sm:py-12 md:py-24 lg:py-32 xl:py-48 custom-night w-full">
+                <div class="container px-4 md:px-6 mx-auto">
+                    <!-- Centered container for all content -->
+                    <div class="flex justify-center">
+                        <div class="flex flex-col lg:flex-row items-center w-full max-w-7xl">
+                            <!-- Hero Text Section -->
+                            <div class="lg:flex-2"> <!-- Increase the flex-grow value to give more space -->
+                                <h1 class="text-3xl font-bold sm:text-5xl xl:text-6xl text-white-smoke pb-4">
+                                    AI-assisted Dashboard for Innovative Solutions
+                                </h1>
+                                <p class="text-white-smoke md:text-lg">
+                                    Streamline your tasks with our AI-powered tools. Experience the future of productivity.
+                                </p>
+                                <!-- ... -->
+                            </div>
+
+                            <!-- Hero Image -->
+                            <div class="lg:flex-1 flex justify-end lg:justify-end"> <!-- Justify the image to the end -->
+                                <img 
+                                    alt="Hero" 
+                                    class="rounded-xl object-cover lg:object-scale-down" 
+                                    src="https://imagedelivery.net/5l14pzvHSLf_qA56HVIXfg/7baebb46-a46e-4b49-a17c-1b62f48d5200/public" 
+                                    style="max-width: 825px; max-height: 464px; width: auto; height: auto;"
+                                />
+                            </div>
+                            <!-- Features Section -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <!-- Features Section -->
+            <section class="w-full py-12 md:py-24 lg:py-32 custom-night">
+                <div class="container px-4 md:px-6 mx-auto">
+                    <!-- Centered container for all content -->
+                    <div class="flex justify-center">
+                        <div class="w-full max-w-6xl"> <!-- This div centers the content and sets max width -->
+                            <h2 class="text-3xl font-bold sm:text-5xl text-white-smoke">
+                                Modular Dashboard with AI Tools
+                            </h2>
+                            <p class="text-white-smoke md:text-lg">
+                                Tailored AI solutions for your business needs. Adapt to the future with our modular dashboard.
+                            </p>
+                            <!-- Cards Section -->
+                            <div class="grid gap-6 mt-12 lg:grid-cols-3">
+                                <div class="rounded-lg border bg-card custom-white-smoke text-card-foreground shadow-sm" data-v0-t="card">
+                                    <div class="flex flex-col space-y-1.5 p-6 font-bold">AI Analytics</div>
+                                    <div class="p-6">
+                                      <p>Get insights and predictions based on your data with our AI analytics module.</p>
+                                    </div>
+                                  </div>
+                                  <div class="rounded-lg border bg-card custom-white-smoke text-card-foreground shadow-sm" data-v0-t="card">
+                                    <div class="flex flex-col space-y-1.5 p-6 font-bold">Chatbot Assistance</div>
+                                    <div class="p-6">
+                                      <p>Communicate with customers efficiently with AI-powered chatbot.</p>
+                                    </div>
+                                  </div>
+                                  <div class="rounded-lg border bg-card custom-white-smoke text-card-foreground shadow-sm" data-v0-t="card">
+                                    <div class="flex flex-col space-y-1.5 p-6 font-bold">Automated Scheduling</div>
+                                    <div class="p-6">
+                                      <p>Keep track of your tasks and appointments with AI-powered scheduling.</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="mt-10">
+                                <button class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 underline-offset-4 hover:underline h-10 px-4 py-2 text-white-smoke underline hover:text-white mx-auto"></button>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+
+                <!-- Footer -->
+                <footer class="footer-bg p-4 mt-8">
+                    <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
+                        <!-- Footer Logo -->
+                        <div class="mb-4 sm:mb-0">
+                            <img src="https://imagedelivery.net/5l14pzvHSLf_qA56HVIXfg/999d4505-ea93-4840-40e6-4b4e8d5dd900/public" alt="WorkWise Logo" class="footer-logo">
+                        </div>
+                        <!-- Social Media Icons -->
+                        <div class="flex space-x-4 mb-4 sm:mb-0">
+                            <a href="#" class="text-night font-medium p-2 rounded-lg hover:bg-gray-200">
+                                <i class="fa-brands fa-instagram social-icon"></i>
+                            </a>
+                            <a href="#" class="text-night font-medium p-2 rounded-lg hover:bg-gray-200">
+                                <i class="fa-brands fa-twitter social-icon"></i> <!-- Corrected class name -->
+                            </a>
+                            <a href="#" class="text-night font-medium p-2 rounded-lg hover:bg-gray-200">
+                                <i class="fa-brands fa-linkedin-in social-icon"></i>
+                            </a>
+                        </div>
+
+                        <!-- Footer Links and Copyright -->
+                        <div class="text-center sm:text-right">
+                            <p class="text-night mb-2">© 2023 WorkWise, Inc. All rights reserved.</p>
+                            <a href="#" class="text-night font-medium p-2 rounded-lg hover:bg-gray-200">
+                                Privacy Policy
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </body>
+            
