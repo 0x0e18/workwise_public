@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contract IQ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f29a65fdb0.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+    <style>
+        .custom-white-smoke { background-color: #F4F4F4; }
+        .text-white-smoke { color: #F4F4F4; }
+        .custom-night { background-color: #0B0B0B; }
+        .text-night { color: #0B0B0B; }
+    </style>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .content-bg {
+            background-color: #0B0B0B; /* New background color for the content area */
+        }
+        /* ... other styles ... */
+    </style>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0B0B0B; /* New background color for the content area */
+        }
+        .header-bg {
+            background-color: #F4F4F4; /* This sets the header background color */
+        }
+        /* ... other styles ... */
+    </style>
+</head>
+<!-- Header -->
+<header class="header-bg pt-4 pb-4 pl-4 pr-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <img src="https://imagedelivery.net/5l14pzvHSLf_qA56HVIXfg/4ede07a0-8696-4fb8-87f0-d000034a7100/public" alt="WorkWise Logo" class="h-12 mr-3">
+        <nav class="flex space-x-4">
+            <a href="#" class="text-night font-medium p-2 rounded-lg hover:bg-gray-200">
+                <span>Pricing</span>
+            </a>
+            <a href="#" class="text-night font-medium p-2 rounded-lg hover:bg-gray-200">
+                <span>Support</span>
+            </a>
+            <a href="#" class="text-night font-medium p-2 rounded-lg hover:bg-gray-200">
+                <span>Dashboard</span>
+            </a>
+        </nav>
+        <div class="flex space-x-4">
+            <div class="relative">
+                <input type="text" class="rounded-full pl-10 pr-4 py-2 border-2 border-gray-200" placeholder="Search">
+                <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-200"></i>
+            </div>
+        </div>
+    </div>
+</header>
+<body class="content-bg">
+    <!-- Main Content -->
+    <div class="flex flex-col justify-center items-center" style="height: calc(100vh - 8rem);"> <!-- Adjust height to account for header and chat input -->
+        <!-- Logo and instruction -->
+        <div class="text-center mb-10">
+            <h1 class="text-2xl font-semibold text-white-smoke">Please upload your contract below.</h1>
+        </div>
+        <!-- Upload button -->
+        <div class="mb-10">
+            <label class="bg-white shadow-md rounded-lg p-4 w-36 h-36 flex flex-col items-center justify-center text-center cursor-pointer">
+                <i class="fas fa-paperclip fa-2x mb-1"></i>
+                Upload a file
+                <input type="file" class="hidden">
+            </label>
+        </div>
+    </div>
+
+    <!-- Chat input -->
+    <div class="fixed bottom-0 left-0 right-0 p-4 bg-white shadow-md">
+        <div class="flex items-center">
+            <input class="flex-1 p-2 border border-gray-300 rounded-l-lg focus:outline-none" placeholder="What do you want to know?" type="text"/>
+            <button class="bg-gray-200 p-2 rounded-r-lg">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
